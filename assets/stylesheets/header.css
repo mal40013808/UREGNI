@@ -1,0 +1,326 @@
+
+/*
+  ======================================================
+                     ABOVE 750PX
+  ======================================================
+*/
+
+#header_wrapper,
+.menu_wrapper {
+  /* centres to middle of page */
+  margin: 0 auto;
+	/* width across the page */
+  width: 1024px;
+}
+
+#header_wrapper {
+  height: 180px;
+}
+
+#header {
+  height: 140px;
+}
+
+.menu_wrapper {
+  height: 40px;
+  background-color: #0F3D0F;
+}
+
+/*
+  ======================================================
+            LOGO ABOVE 750PX
+  ======================================================
+*/
+
+.top_left {
+width: 50%;
+}
+
+/*
+  ======================================================
+  LOGO RESPONSIVE
+  ======================================================
+*/
+
+@media only screen and (max-width: 750px) {
+.top_left {
+  height: 180px;
+}
+
+#logo {
+  margin: .8rem 0 0 0;
+}
+
+#logo img {
+  margin: 0 auto;
+}
+}
+
+/*
+=======================
+SEARCH BAR ABOVE 750PX
+=======================
+*/
+
+.top_right {
+  width: 50%;
+}
+
+input[type="text"]{
+  width: 200px;
+  height: 33px;
+  padding-right: 50px;
+  position: absolute; top: 45px; right: 290px;
+  float: right;
+}
+
+/* search icon */
+.input-icon{
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 0.5em); /* Keep icon in center of input height, regardless of the input height */
+  color: pink;
+}
+
+.input-wrapper{
+/* centres to middle of page  */
+  margin: 0 auto;
+}
+
+/* search button */
+input[type="submit"] {
+/* height has to be the same as text input */
+  height: 33px;
+  width: 90px;
+  position: absolute; top: 45px; right: 220px;
+/* grey background */
+ background: #666;
+/* text colour is white */
+  color: white;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+/* removing blue border when text input is clicked, it is bad for accessibility but it is a copy of the original website */
+textarea:focus, input:focus{
+  outline: none;
+}
+
+/*
+  =================================
+  SEARCH BAR RESPONSIVE BELOW 750PX
+  =================================
+*/
+
+@media only screen and (max-width: 750px) {
+  input[type="text"]{
+    width: 400px;
+    height: 30px;
+    /* padding-right: 50px; */
+    position: absolute; left: 5px;
+    text-indent: 30px;
+  }
+  /* search button */
+   input[type="submit"] {
+      /* height has to be the same as text input */
+      height: 30px;
+      width: 80px;
+      position: relative; left:460px;
+      /* grey background */
+      background: #616977;
+      /* text colour is white */
+      color: white;
+      border: 0;
+      -webkit-appearance: none;
+  }
+}
+
+
+
+  /*
+  ======================================================
+        NAVIGATION BAR ABOVE 750PX
+  ======================================================
+*/
+
+* {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav ul {
+  list-style: none;
+  z-index: 9999;
+  display: inline;
+  position: absolute;
+  background-color: #0F3D0F;
+}
+
+.topnav ul li {
+ height: 40px;
+ border: 1px solid white;
+ border-bottom: none;
+ text-align: center;
+ float: left;
+ background-color: #0F3D0F;
+ color: white;
+ line-height: 40px;
+ position: relative;
+ z-index: 9999;
+ word-wrap: break-word;
+ overflow-wrap: break-word;
+ cursor:pointer;
+ display: inline;
+ padding: 0px 20px;
+}
+
+/* active page link is purple */
+.topnav ul li.active-page {
+  background-color: #606;
+  }
+
+/* sets the background colour on hover to purple */
+.topnav ul li:hover {
+  background-color: #606;
+}
+
+.topnav ul li:hover > ul {
+  display: block;
+  z-index: 9999;
+}
+
+
+
+.topnav a {
+  color: white;
+}
+
+/* takes away underline on current page when hovered over title */
+.topnav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.topnav ul ul {
+  display: none;
+  z-index: 9999;
+  text-align: left;
+  word-wrap: break-word;
+  width: 220px;
+  position: absolute;
+}
+
+/* sub drop down */
+.topnav ul ul ul {
+  margin-left: 200px;
+  top: 0px;
+  position: absolute;
+  z-index: 9999;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  position: absolute;
+}
+
+.topnav ul li ul li {
+  background-color: #606;
+  width: 220px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+.topnav ul li ul li:hover {
+background-color: #0F3D0F;
+}
+
+/*
+    ======================================================
+       NAV BAR HIDDEN ELEMENTS UNTIL RESIZED
+   ======================================================
+*/
+.topnav label {
+/* styling for burger icon */
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  width: 10px;
+/* can't see icon until screen is minimised */
+  display: none;
+}
+
+/* can't see checkbox until screen is minimised */
+#toggle {
+  display:none;
+}
+
+/*
+    ======================================================
+       NAV BAR RESPONSIVE
+   ======================================================
+*/
+
+/* UP UNTIL 750PX */
+@media only screen and (max-width: 750px) {
+.topnav label {
+/* show label in white and change cursor to pointer */
+  display: block;
+  cursor: pointer;
+  color: white;
+  width: 40px;
+  float: left;
+}
+
+.menu ul {
+/* show the menu */
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+.menu a {
+ display: block;
+ border-bottom: 1px solid #EAEAEB;
+ margin: 0;
+ width: 100%;
+}
+
+#toggle:checked + .menu {
+  display: block;
+  float:left;
+}
+
+.menu ul li {
+  display: block;
+  float: left;
+}
+
+
+ /* copied from here */
+#main-menu ul,
+#main-menu li {
+  float: none;
+  max-width: 100%;
+}
+
+#main-menu ul {
+ display: none;
+}
+
+#main-menu ul.menu li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    border-right: none;
+}
+
+#main-menu ul li.leaf, #main-menu ul li.expanded, #main-menu ul li.collapsed {
+    list-style: none;
+}
+
+
+
+}

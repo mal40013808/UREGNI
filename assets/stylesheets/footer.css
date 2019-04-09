@@ -1,0 +1,97 @@
+/*
+  ======================================================
+  FOOTER
+  ======================================================
+*/
+
+footer {
+	background-color: #0F3D0F;
+	padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+	margin: 0 auto;
+  width: 1060px;
+	color: white;
+	/* light green strip accross top  */
+	border-top: 5px solid #79b52b;
+	font-size: 20px;
+  font-family: sans-serif;
+}
+
+/* text input for email in footer */
+input[type="email"] {
+    position:relative; right:0px;
+		width: 224px;
+		font-size: 15px;
+		margin-top: 20px;
+}
+
+
+/* links in footer at very bottom */
+footer a {
+	color: white;
+	text-decoration: underline;
+
+}
+
+footer a:hover {
+	color: white;
+	text-decoration: none;
+
+}
+
+footer img{
+	width: 90%;
+}
+
+.twitter {
+	height: 50px;
+	width: 80px;
+}
+
+.twitter i {
+	border-radius: 100%;
+	border: 1px solid white;
+	padding: 5px;
+	margin-top: 20px;
+}
+
+footer h3 {
+	font-size: 15px;
+	line-height: 5px;
+}
+
+footer .btn {
+	position: relative;
+	margin-top: 20px;
+	background-color: #606;
+}
+
+/*
+  ======================================================
+  THREE COLUMN LAYOUT FOR FOOTER
+  ======================================================
+*/
+.col-1-3 {
+	/* each column 33.33 wide, third of screen */
+  width: 33.33%;
+	/* makes the layour into columns, without this line it would just go straight down the screen */
+	display: inline-block;
+/* alignment is from the top of the objects */
+  vertical-align: top;
+}
+
+.grid,
+.col-1-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+	/* moves line beneath down to correct position */
+	padding-bottom: 20px;
+}
+
+/* three images in grid */
+.col-1-3 img {
+	/* max width of column */
+  max-width: 50%;
+}

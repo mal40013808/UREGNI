@@ -1,0 +1,639 @@
+
+/*
+  ======================================================
+  DIFFERENT BROWSERS
+  ======================================================
+*/
+
+
+:before,
+:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: inherit;
+}
+
+:root {
+  font-size: 65.5%;
+}
+
+/*
+  ======================================================
+  FORMATTING FOR WIDTH ALONG PAGE SECTION CLASSES
+  ======================================================
+*/
+/* container and grid */
+.container,
+.grid,
+.logo,
+#image_block,
+.introduction_section
+{
+	/* centres to middle of page */
+  margin: 0 auto;
+	/* width across the page */
+  width: 1024px;
+}
+
+
+/*
+  ======================================================
+  CONSUMER INFORMATION SECTION
+  ======================================================
+*/
+#image_block {
+	margin-bottom: 20px;
+  width: 1024px;
+  background-color: #78cbbf;
+  height: 270px;
+}
+
+@media screen and (min-width: 765px) {
+  #image_block {
+    background-image: url("/Users/dsswebdev11/Documents/uregni-static-html/assets/images/home/consumerinformation.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    min-height: 270px;
+  }
+}
+
+#image_block .btn-altfour {
+display: inline-block;
+margin: 1rem 0 0;
+padding: .6rem 1.6rem;
+text-decoration: underline;
+position: relative; left: 30px;
+}
+
+
+#image_block h2 {
+color: white;
+font-size: 4.8rem;
+line-height: 5rem;
+width: 275px;
+padding: 24px;
+}
+
+#image_block .btn-altfour:hover {
+  background-color: #606;
+}
+
+/*
+  ======================================================
+  Buttons
+  ======================================================
+*/
+
+.btn {
+/* text color is white */
+	color: white;
+	/* background color is theme green */
+	background-color: #0F3D0F;
+	/* text is underlined */
+	text-decoration: underline;
+	/* makes it square */
+	border-radius: 2px;
+	padding-top: 20px;
+}
+
+/* when button is hovered over */
+.btn:hover{
+	/* changes to slighty lighter color to let user know they are on the button */
+	background-color: #264f16;
+	/* gets rid of underline */
+	text-decoration: none;
+	/* text color is still white */
+	color: white;
+}
+
+
+.column .btn-alt:hover{
+color: white;
+}
+
+.column_two .btn-alt:hover{
+color: white;
+}
+
+
+/* when hovered over it stays the same size */
+.btn-alt {
+padding: 10px 40px;
+}
+
+/* button one red */
+.btnone {
+	/* text color is white */
+		color: white;
+		/* background color is red */
+		background-color: #cc4630;
+		/* text is underlined */
+		text-decoration: underline;
+		/* makes it square */
+		border-radius: 2px;
+		padding: .6rem 1.6rem;
+		font-size: 1.6rem;
+}
+
+.btnone:hover{
+	/* changes to slighty lighter color to let user know they are on the button */
+	background-color: #dd2c2c;
+	/* gets rid of underline */
+	text-decoration: none;
+	/* text color is still white */
+	color: white;
+}
+/* when hovered over it stays the same size */
+.btnone-alt {
+	padding: .6rem 1.6rem;
+}
+
+/* button two purple*/
+.btntwo {
+	/* text color is white */
+		color: white;
+		/* background color is purple */
+		background-color: #8561af;
+		/* text is underlined */
+		text-decoration: underline;
+		/* makes it square */
+		border-radius: 2px;
+		padding: .6rem 1.6rem;
+		font-size: 1.6rem;
+}
+
+/* when you hover over button */
+.btntwo:hover{
+	/* changes to slighty lighter color to let user know they are on the button */
+	background-color: #a030e5;
+	/* gets rid of underline */
+	text-decoration: none;
+	/* text color is still white */
+	color: white;
+}
+/* when hovered over it stays the same size */
+.btntwo-alt {
+	padding: .6rem 1.6rem;
+}
+
+
+/* button three blue*/
+.btnthree {
+	/* text color is white */
+		color: white;
+		/* background color is blue */
+		background-color: #0a7ad0;
+		/* text is underlined */
+		text-decoration: underline;
+		/* makes it square */
+		border-radius: 2px;
+		padding: .6rem 1.6rem;
+		font-size: 1.6rem;
+}
+
+/* when blue button hovered over */
+.btnthree:hover{
+	/* changes to slighty lighter color to let user know they are on the button */
+	background-color: #5b92e5;
+	/* gets rid of underline */
+	text-decoration: none;
+	/* text color is still white */
+	color: white;
+}
+/* when hovered over it stays the same size */
+.btnthree-alt {
+	padding: .6rem 1.6rem;
+}
+
+/* sign up button in footer */
+.btn-altfour {
+
+  background-color: purple;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+.btn-altfour:hover {
+  background-color: purple;
+  text-decoration: none;
+  color: white;
+}
+
+/*
+  ======================================================
+  CUSTOM STYLES/TYPOGRAPHY
+  ======================================================
+*/
+
+/* overall font */
+body {
+  color: #888;
+  font-family: sans-serif;
+}
+
+/* dark gray color headings */
+.introduction_section h1 {
+  font-size: 3rem;
+	font-family: sans-serif;
+	line-height: 3.6rem;
+  font-weight: 200;
+  color: #0F3D0F;
+  letter-spacing: -.3px;
+  text-align: justify;
+}
+.introduction_section p {
+	font-size: 2.1rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2.1rem;
+	color: #555;
+	font-family: sans-serif;
+	line-height: 3rem;
+	font-weight: bold;
+}
+
+	/* purple text for links */
+.row h3 {
+  font-size: 16px;
+  line-height: 20px;
+	color: #606;
+	font-family: sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.row h3:hover {
+	text-decoration: none;
+}
+
+/* white text in footer */
+h4 {
+  font-size: 15px;
+	color: white;
+	line-height:3px;
+	padding: 1px;
+	font-family: sans-serif;
+}
+
+h5 {
+  font-size: 30px;
+	color: #3a3939;
+	font-family: sans-serif;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: lighter;
+	/* responsive */
+	font-size:2.2vw;
+}
+
+h6 {
+color: black;
+font-family: sans-serif;
+}
+
+h7 {
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+p {
+	color: #444444;
+	font-size: 15.5px;
+	padding-bottom: 50px;
+	font-family: sans-serif;
+	font-weight: normal;
+
+}
+
+
+/*
+  ======================================================
+  CAROUSEL
+  ======================================================
+*/
+/* Indicators on sildeshow */
+
+.slideshow_wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.slideshow_wrapper .carousel-inner {
+	/* moves indicators down */
+   margin-bottom:30px;
+}
+
+/* leaves room so that the indicators don't interfere with content below */
+.slideshow_wrapper .carousel-indicators {
+  bottom:-40px;
+}
+
+/* changing background color of indicators */
+.slideshow_wrapper .carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+/* whichever slide is showing, background color for indicator will be different  */
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+
+
+/*
+  ======================================================
+  INTRODUCTION SECTION
+  ======================================================
+*/
+ .introduction_section {
+   padding-top: 10px;
+   padding-bottom: 0px;
+   height: 150px;
+   letter-spacing: -.3px;
+
+ }
+
+/*
+  ======================================================
+  THREE COLUMN LAYOUT ONE
+  ======================================================
+*/
+.col-1-3 {
+	/* each column 33.33 wide, third of screen */
+  width: 33.33%;
+	/* makes the layour into columns, without this line it would just go straight down the screen */
+	display: inline-block;
+/* alignment is from the top of the objects */
+  vertical-align: top;
+}
+
+.grid,
+.col-1-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+	/* moves line beneath down to correct position */
+	padding-bottom: 20px;
+}
+
+/* three images in grid */
+.teaser img {
+	/* max width of column, need this to ensure gaps between images */
+  max-width: 100%
+}
+
+.image-grid {
+	position:relative; left: -20px;
+	padding-bottom: 20px;
+}
+
+.columnone i {
+  background: #cc4630;
+}
+.columntwo i {
+  background: #8561af;
+}
+
+.columnthree i {
+  background: #0a7ad0;
+}
+.image-grid h2 {
+  font-size: 2.1rem;
+  line-height: 3rem;
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+}
+
+h2 .fa {
+width: 43px;
+height:43px;
+color: white;
+border-radius: 100%;
+text-align: center;
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 2;
+-webkit-font-smoothing: antialiased;
+vertical-align: middle;
+  }
+
+article {
+  height: 450px;
+}
+/*
+  ======================================================
+  THREE COLUMN LAYOUT ONE RESPONSIVE
+  ======================================================
+*/
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+  .col-1-3 {
+		/* full width of screen */
+    width: 100%;
+		height: 300px;
+  }
+
+/* makes image float to right  */
+.col-1-3 img {
+	float: right;
+
+}
+
+.col-1-3 h2 {
+	/* purple links */
+	color: #540e54;
+	text-decoration: underline;
+
+}
+}
+
+
+
+/*
+  ======================================================
+  THREE COLUMN LAYOUT/ELECTRICITY GAS WATER
+  ======================================================
+*/
+/* col-1-4  */
+
+
+.col-1-4 {
+	/* each column 33.33 wide, third of screen */
+  width: 33.33%;
+	/* makes the layour into columns, without this line it would just go straight down the screen */
+	display: inline-block;
+/* alignment is from the top of the objects */
+  vertical-align: top;
+}
+
+.grid,
+.col-1-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+	/* moves line beneath down to correct position */
+	padding-bottom: 20px;
+}
+
+/* three images in grid */
+.teaser img {
+	/* max width of column, need this to ensure gaps between images */
+  max-width: 100%
+}
+
+.image-grid {
+	position:relative; left: -20px;
+	padding-bottom: 20px;
+}
+
+
+/*
+  ======================================================
+  THREE COLUMN LAYOUT/ELECTRICITY GAS WATER RESPONSIVE
+  ======================================================
+*/
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.col-1-4 {
+    width: 100%; /* full width of screen */
+  }
+
+.col-1-4 img {
+ padding: 20px;
+}
+}
+
+
+/*
+  ======================================================
+  TWO COLUMN LAYOUT// HOME PAGE
+  ======================================================
+*/
+
+.two-column-layout-home {
+	border-top: 4px solid #686868;
+}
+
+.two-column-layout-home,
+.two-column-layout {
+  width: 1024px;
+  margin: 0px auto;
+}
+
+/* Create two equal columns that floats next to each other */
+.column_one,
+.column_two {
+  float: left;  /* float the text to left */
+  width: 50%;    /* half and half make two columns  */
+  padding: 30px; /* enuring gaps are correct amount */
+	padding-top: 20px;
+}
+
+.column_two {
+  background-color: #f3f3f3;
+}
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*
+  ======================================================
+  TWO COLUMN LAYOUT// ABOUT US PAGE
+  ======================================================
+*/
+.column_three {
+	width: 25%;
+	float:left;
+}
+
+.column_four {
+	width: 75%;
+	float:left;
+}
+
+.column_four img {
+	width: 100%;
+}
+
+/* for line */
+.text_area {
+	border-top: solid 1px;
+}
+/*
+  ======================================================
+  ABOUT US PAGE VERTICAL MENU
+  ======================================================
+*/
+.vertical-menu {
+  width: 250px;
+}
+
+.vertical-menu a {
+  background-color: white;
+  color: black;
+  display: block;
+   border: 0.02px solid #92959b;
+  border-bottom: 0.02px solid #92959b;
+  padding: 15px;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.vertical-menu a:hover {
+  text-decoration: none;
+
+}
+
+/*
+	======================================================
+	COVER IMAGE
+	======================================================
+*/
+
+.right img {
+ height: 250px;
+ width: 730px;
+ float: right;
+}
+
+
+/*
+  ======================================================
+  BREADCRUMB
+  ======================================================
+*/
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: white;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+  position:relative; top:20px; left:10px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">>\00a0";
+}
+ul.breadcrumb li a {
+  color: #4a1070;
+  text-decoration: underline;
+}
+ul.breadcrumb li a:hover {
+  color: #4a1070;
+  text-decoration: none;
+}
